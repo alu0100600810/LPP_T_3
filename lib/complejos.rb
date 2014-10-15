@@ -8,5 +8,10 @@ class Complejos
 	end
 
 
+	def to_s
+	   "(#{@a},#{@b})"
+	end
+
+
 
 end
