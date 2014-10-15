@@ -10,4 +10,10 @@ class TestComplejos < Test::Unit::TestCase
     assert((c.a == 2) && (c.b == 3))    
   end
 
+  def test_init
+    assert_raise (TypeError) do
+      c = Complejos.new('a', 'b')
+    end
+  end
+
 end
