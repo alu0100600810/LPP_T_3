@@ -40,4 +40,8 @@ class TestComplejos < Test::Unit::TestCase
     assert_equal(d.b, 6, 'Fallo en el producto por un escalar (parte imaginaria)')
   end 
 
+  def test_to_s
+    assert_equal(Complejos.new(2, 3), "(2,3)", 'Fallo en el formato del método to_s')
+  end
+
 end
