@@ -16,4 +16,11 @@ class TestComplejos < Test::Unit::TestCase
     end
   end
 
+  def test_operaciones
+    c = Complejos.new(2, 3)
+    d = c + c
+    assert_equal(d.a, 4, 'Fallo en la suma (parte real)')
+    assert_equal(d.b, 6, 'Fallo en la suma (parte imaginaria)')    
+  end 
+
 end
