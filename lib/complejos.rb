@@ -20,6 +20,9 @@ class Complejos
          Complejos.new(@a - other.a , @b - other.b)
         end
 
+	def *(other)
+	 Complejos.new(((@a * other.a) - (@b * other.b)) , ((@a * other.b) + (@b * other.a)))
+	end 
 
 end
 
