@@ -21,13 +21,19 @@ class TestComplejos < Test::Unit::TestCase
     d = c + c
     assert_equal(d.a, 4, 'Fallo en la suma (parte real)')
     assert_equal(d.b, 6, 'Fallo en la suma (parte imaginaria)')    
+
     e = Complejos.new(1, 2)
     d = c - e
     assert_equal(d.a, 1, 'Fallo en la resta (parte real)')
     assert_equal(d.b, 1, 'Fallo en la resta (parte imaginaria)')
+
     d = c * e
     assert_equal(d.a, -4, 'Fallo en la multiplicación (parte real)')
     assert_equal(d.b, 7, 'Fallo en la multiplicación (parte imaginaria)')
+  
+    d = c / e
+    assert_equal(d.a, 1.6, 'Fallo en la división (parte real)')
+    assert_equal(d.b, -0.2, 'Fallo en la división (parte imaginaria)')
   end 
 
 end
