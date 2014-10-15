@@ -1,6 +1,6 @@
 class Complejos
 
-	attr_reader :a, :b
+	attr_accessor :a, :b
 
 
 	def initialize(a,b)
@@ -12,6 +12,9 @@ class Complejos
 	   "(#{@a},#{@b})"
 	end
 
-
-
+	def +(other)
+	 Complejos.new(@a + other.a , @b + other.b)
+	end
 end
+
+
