@@ -15,6 +15,12 @@ class Complejos
 	def +(other)
 	 Complejos.new(@a + other.a , @b + other.b)
 	end
+
+	def -(other)
+         Complejos.new(@a - other.a , @b - other.b)
+        end
+
+
 end
 
 
