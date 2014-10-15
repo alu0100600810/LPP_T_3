@@ -34,6 +34,10 @@ class TestComplejos < Test::Unit::TestCase
     d = c / e
     assert_equal(d.a, 1.6, 'Fallo en la división (parte real)')
     assert_equal(d.b, -0.2, 'Fallo en la división (parte imaginaria)')
+
+    d = c * 2
+    assert_equal(d.a, 4, 'Fallo en el producto por un escalar (parte real)')
+    assert_equal(d.b, 6, 'Fallo en el producto por un escalar (parte imaginaria)')
   end 
 
 end
