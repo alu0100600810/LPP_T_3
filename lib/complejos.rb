@@ -24,6 +24,12 @@ class Complejos
 	 Complejos.new(((@a * other.a) - (@b * other.b)) , ((@a * other.b) + (@b * other.a)))
 	end 
 
+	def /(other)
+	 r = (other.a**2 + other.b**2)
+	 a = Float((@a * other.a) + (@b * other.b))/r
+	 b = Float((@b * other.a) - (@a * other.b))/r
+	 Complejos.new(a,b)
+	end
+        
+
 end
-
-
