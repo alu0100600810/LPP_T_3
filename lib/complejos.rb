@@ -4,6 +4,7 @@ class Complejos
 
 
 	def initialize(a,b)
+          raise TypeError, 'Argumentos numéricos esperados' unless (a.is_a? Numeric) && (b.is_a? Numeric)
 		@a,@b = a, b
 	end
 

@@ -41,7 +41,7 @@ class TestComplejos < Test::Unit::TestCase
   end 
 
   def test_to_s
-    assert_equal(Complejos.new(2, 3), "(2,3)", 'Fallo en el formato del método to_s')
+    assert_equal(Complejos.new(2, 3).to_s, "(2,3)", 'Fallo en el formato del método to_s')
   end
 
 end
