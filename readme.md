@@ -14,7 +14,7 @@ Práctica de laboratorio #4: Pruebas Unitarias
 con pruebas unitarias para comprobar su correcto funcionamiento. La estructura del repositorio es la siguiente:
 
   * [ ] [Documentación](doc/)
-    * [ ] Documentación de las librerías
+    * [x] Documentación de las librerías
     * [ ] Documentación de las pruebas unitarias
   * [x] [Librerías](lib/)
     * [x] [Clase Ruby Complejos](lib/complejos.rb)
